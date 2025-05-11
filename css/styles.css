@@ -526,3 +526,141 @@ header {
   letter-spacing: 0px;
   font-family: "Poppins", sans-serif;
 }
+
+/* Sign Up Page */
+
+input {
+  border: 1px solid black;
+}
+
+.sign-up-section {
+  width: 552px;
+  height: 832px;
+  /* border: 1px solid red; */
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 176px;
+  padding: 30px 64px 10px 64px;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.premium,
+.price-month {
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #212628;
+}
+
+.premium {
+  font-size: 25px;
+  line-height: 48px;
+}
+.price-month {
+  font-size: 23px;
+  line-height: 25px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 23px;
+  color: #212628;
+  opacity: 60%;
+  font-weight: 600;
+}
+
+.sign-up-form {
+  margin-top: 43px;
+}
+.input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 0px 54px 0px 24px;
+  outline: none;
+  margin-bottom: 27px;
+  color: #212628;
+  opacity: 50%;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.input-card-number {
+  background-image: url("/images/sign-up/purse\ icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+}
+
+.date-and-cvv,
+.country-and-zip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-input,
+.select-country {
+  width: 282px;
+}
+
+.CVV-input,
+.zip-input {
+  width: 120px;
+}
+
+.select-country {
+  width: 282px;
+  appearance: none;
+  background-image: url("/images/sign-up/arrow\ down.svg");
+  background-repeat: no-repeat;
+  background-position: right 23px center;
+  cursor: pointer;
+}
+
+.highlighted a {
+  text-decoration: underline;
+  color: #e1306c;
+}
+.highlighted {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+.submit-btn {
+  width: 370px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 29px auto 0px 25px;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    #c23584 0%,
+    #e2306c 24%,
+    #f77736 84%,
+    #fa963e 100%
+  );
+}
+
+.btn-highlighted {
+  color: #fff;
+  text-decoration: line-through;
+  opacity: 60%;
+}
+
+.btn {
+  margin: auto;
+}
