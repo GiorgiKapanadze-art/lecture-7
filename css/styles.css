@@ -541,6 +541,7 @@ input {
   margin: auto;
   margin-top: 176px;
   padding: 30px 64px 10px 64px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
 .form-header {
   display: flex;
@@ -633,6 +634,9 @@ input {
   line-height: 22px;
   font-weight: 400;
   opacity: 70%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .submit-btn {
@@ -662,5 +666,32 @@ input {
 }
 
 .btn {
+  margin: auto;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.coupon {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #e1306c;
+  margin-top: 70px;
+}
+.last {
+  width: 370px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
