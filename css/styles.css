@@ -766,7 +766,7 @@ input {
 .womens-collection-wrapper {
   width: 570px;
   height: 284px;
-  background-image: url("/images/attractive-woman-wearing-hat-posing-black-background\ 1.png");
+  background-image: url("../images/attractive-woman-wearing-hat-posing-black-background\ 1.png");
   background-color: #0d0d0d;
   background-position-x: 138px;
 }
@@ -788,7 +788,7 @@ input {
 .speakers-wrapper {
   width: 270px;
   height: 284px;
-  background-image: url("/images/speakers.png");
+  background-image: url("../images/speakers.png");
   background-color: #000;
   background-position: center;
 }
@@ -803,7 +803,7 @@ input {
 .perfume-wrapper {
   width: 270px;
   height: 284px;
-  background-image: url("/images/parfume.png");
+  background-image: url("../images/parfume.png");
   background-color: #000;
   background-position: center;
 }
