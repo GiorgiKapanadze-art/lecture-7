@@ -23,6 +23,7 @@ header {
   color: #fff;
   position: fixed;
   top: 0;
+  z-index: 999999;
 }
 
 .shop-now-btn {
@@ -65,7 +66,6 @@ header {
 }
 
 .main-header {
-  /* border: 1px solid green; */
   display: flex;
   align-items: center;
   margin-top: 40px;
@@ -110,7 +110,6 @@ header {
 }
 
 .search-and-cart {
-  /* border: 1px solid green; */
   width: 347px;
   height: 38px;
   display: flex;
@@ -120,7 +119,6 @@ header {
 }
 
 .search {
-  /* border: 1px solid green; */
   width: 243px;
   height: 38px;
   border-radius: 4px;
@@ -163,7 +161,6 @@ header {
 .categories-filter {
   height: 384px;
   width: 233px;
-  /* border: 1px solid red; */
   padding: 40px 16px 0px 0px;
   border-right: 0.5px solid rgba(0, 0, 0, 0.3);
 }
@@ -171,7 +168,6 @@ header {
 .product-banner {
   width: 892px;
   height: 344px;
-  /* border: 1px solid red; */
   margin-top: 40px;
   background-color: #000;
   color: #fff;
@@ -196,7 +192,6 @@ header {
 .image-section {
   width: 496px;
   height: 344px;
-  /* border: 1px solid red; */
 }
 
 .iphone-series {
@@ -365,19 +360,16 @@ header {
 .gallery {
   height: 350px;
   margin-top: 40px;
-  /* border: 1px solid red; */
   display: flex;
   column-gap: 30px;
 }
 
 .gallery-sections {
-  /* border: 1px solid red; */
   width: 270px;
   height: 350px;
 }
 
 .gallery-photo-area {
-  /* border: 1px solid red; */
   width: 270px;
   height: 250px;
   border-radius: 4px;
@@ -444,7 +436,6 @@ header {
 }
 
 .add-to-cart {
-  /* border: 1px solid green; */
   width: 270px;
   height: 41px;
   margin-top: 49px;
@@ -512,7 +503,6 @@ header {
 .view-more {
   width: 234px;
   height: 56px;
-  border: 1px solid red;
   border-radius: 4px;
   padding: 16px 48px;
   background-color: #db4444;
@@ -536,7 +526,6 @@ input {
 .sign-up-section {
   width: 552px;
   height: 832px;
-  /* border: 1px solid red; */
   border-radius: 30px;
   margin: auto;
   margin-top: 176px;
@@ -670,10 +659,20 @@ input {
 }
 
 .checkbox {
+  appearance: none;
   width: 22px;
   height: 22px;
-  border-radius: 2px;
+  border-radius: 6px;
   margin-right: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkbox:checked::after {
+  content: url("/images/sign-up/hacken.svg");
 }
 
 .coupon {
@@ -695,3 +694,257 @@ input {
   align-items: center;
   margin: auto;
 }
+
+.featured {
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-wrapper {
+  color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.playstation-wrapper {
+  width: 570px;
+  height: 600px;
+  background-image: url("../images/playstation.png");
+  background-color: #000;
+  background-position: 29px 89px;
+}
+
+.playstation-text {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+.card-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  width: 242px;
+  margin: 16px 0px;
+}
+.card-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  /* text-decoration: underline; */
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card-link::after {
+  content: "";
+  height: 1px;
+  width: 81px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #8b8b8b;
+}
+
+.featured-right-section {
+  width: 570px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.womens-collection-wrapper {
+  width: 570px;
+  height: 284px;
+  background-image: url("/images/attractive-woman-wearing-hat-posing-black-background\ 1.png");
+  background-color: #0d0d0d;
+  background-position-x: 138px;
+}
+
+.womens-collection-text {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 261px;
+}
+
+.speakers-and-perfume {
+  width: 570px;
+  height: 284px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.speakers-wrapper {
+  width: 270px;
+  height: 284px;
+  background-image: url("/images/speakers.png");
+  background-color: #000;
+  background-position: center;
+}
+
+.speakers-text,
+.perfume-text {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+
+.perfume-wrapper {
+  width: 270px;
+  height: 284px;
+  background-image: url("/images/parfume.png");
+  background-color: #000;
+  background-position: center;
+}
+
+footer {
+  width: 100%;
+  /* height: 440px; */
+  background-color: #000;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 0px 40px 0px;
+}
+
+.footer-main {
+  /* border: 1px solid white; */
+  width: 1170px;
+  height: 236px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 87px;
+  margin-top: 80px;
+  margin-left: 690px;
+}
+
+.footer-main-exclusive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-main-exclusive-list a {
+  color: #fafafa;
+}
+
+.footer-main-exclusive-list h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.footer-main-exclusive-list h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+.footer-main-exclusive-list h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer-email {
+  width: 217px;
+  height: 48px;
+  border: 2px solid #fafafa;
+  border-radius: 4px;
+  padding: 12px 15px 12px 16px;
+  display: flex;
+}
+
+.footer-email img {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  cursor: pointer;
+  margin-left: -15px;
+}
+
+.footer-email input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.support,
+.account,
+.quick-link,
+.download-app {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.support h4,
+.account h4,
+.quick-link h4,
+.download-app h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+
+.support li,
+.account li,
+.quick-link,
+.download-app {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+.download-app li {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  opacity: 70%;
+}
+.qr-google-apple {
+  display: flex;
+  width: 198px;
+  height: 84px;
+  justify-content: space-between;
+}
+.google-and-apple-btn {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.social-media {
+  width: 168px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+/* .rimel {
+  color: green;
+} */
+/* footer > div:last-child {
+  background-color: #000;
+  color: #fafafa;
+  text-align: center;
+  padding: 20px 0;
+} */
